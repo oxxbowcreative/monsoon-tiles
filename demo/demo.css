@@ -1,0 +1,113 @@
+html,
+body {
+  margin: auto;
+  padding: auto;
+}
+
+.margin-cont {
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 0px) {
+  .margin-cont {
+    width: 95%;
+  }
+}
+
+@media (min-width: 700px) {
+  .margin-cont {
+    width: 50vw;
+  }
+}
+
+.margin-cont #gallery-grid {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.margin-cont #gallery-grid .gallery-grid-item-cont {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+}
+
+@media (min-width: 0px) {
+  .margin-cont #gallery-grid .gallery-grid-item-cont {
+    width: 50%;
+  }
+}
+
+@media (min-width: 500px) {
+  .margin-cont #gallery-grid .gallery-grid-item-cont {
+    width: 30%;
+  }
+}
+
+.margin-cont #gallery-grid .gallery-grid-item-cont .gallery-grid-item-cont-fg {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 8px;
+  top: 4px;
+  height: 30px;
+  padding: 0px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10cm;
+  z-index: 2;
+}
+
+.margin-cont #gallery-grid .gallery-grid-item-cont .gallery-grid-item-cont-fg p {
+  margin: 0 0;
+  padding: 0 0;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1em;
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.margin-cont #gallery-grid .gallery-grid-item-cont .gallery-grid-item-cont-bg {
+  position: relative;
+  width: 95%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.margin-cont #gallery-grid .gallery-grid-item-cont .gallery-grid-item-cont-bg img {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.margin-cont #gallery-grid .sm {
+  height: 3cm;
+}
+
+.margin-cont #gallery-grid .lg {
+  height: 6cm;
+}
+
+.margin-cont #gallery-grid .xl {
+  height: 9cm;
+}
+/*# sourceMappingURL=demo.css.map */

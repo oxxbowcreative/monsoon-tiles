@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsoon Tiles Demo</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <div class="margin-cont">
+        <div id="gallery-grid">
+            <div class="gallery-grid-item-cont sm">
+                <div class="gallery-grid-item-cont-fg"><p>1</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/300" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont lg">
+                <div class="gallery-grid-item-cont-fg"><p>2</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/600" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont lg">
+                <div class="gallery-grid-item-cont-fg"><p>3</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/550" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont sm">
+                <div class="gallery-grid-item-cont-fg"><p>4</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/359" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont sm">
+                <div class="gallery-grid-item-cont-fg"><p>5</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/349" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont sm">
+                <div class="gallery-grid-item-cont-fg"><p>6</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/545" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont lg">
+                <div class="gallery-grid-item-cont-fg"><p>7</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/921" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont sm">
+                <div class="gallery-grid-item-cont-fg"><p>8</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/233" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont lg">
+                <div class="gallery-grid-item-cont-fg"><p>9</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/633" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont lg">
+                <div class="gallery-grid-item-cont-fg"><p>10</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/831" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-grid-item-cont sm">
+                <div class="gallery-grid-item-cont-fg"><p>11</p></div>
+                <div class="gallery-grid-item-cont-bg">
+                    <img src="https://picsum.photos/300/426" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="../src/monsoontiles.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(()=>{
+                let x = new MoonsoonGrid(document.getElementById("gallery-grid"),document.getElementsByClassName("gallery-grid-item-cont"), 15)
+            },5000)
+        });
+    </script>
+</body>
+</html>
